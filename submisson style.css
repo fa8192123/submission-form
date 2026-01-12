@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin-left: 15px;
+    margin-top: 30px;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo{
+    width: 110px;
+    margin-bottom: 10px;
+}
+.container{
+    background-color: #8c3434;
+    display: flex;
+    color: white;
+    align-items: center;
+    padding-top: px;
+    height: 1200px;
+}
+.end{
+   width: 130px;
+   filter: brightness(15);
+   position: absolute;
+   right: 0;
+   bottom: 0;
+}
+.left{
+    flex: 1;
+}
+.Right{
+    flex: 1;
+    position: relative;
+    bottom: 10px;
+}
+.box{
+    width: 450px;
+    position: relative;
+    bottom: 180px;
+    left: 110px;
+}
+h1{
+    font-size:80px ;
+    
+    margin-bottom: 10px;
+}
+.box p{
+    font-size: 16px;
+    color: black;
+}
+ h3{
+    color: black;
+    font-size: 28px;
+    font-weight: 1000;
+    align-self: start;
+}
+.Right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input input{
+    width: 450px;
+    height: 50px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    background: none;
+    border: 2px solid white;
+}
+.input input::placeholder{
+    color: white;
+}
+.Right h3{
+    margin-left: 85px;
+}
+.Right p {
+    font-size: 12px;
+    margin-right: 10px;
+    margin-bottom: 25px;
+}
+.Right .Award{
+    display: flex;
+    width: 450px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.Right .Award label{
+    width: 280px;
+    margin-bottom: 20px;
+
+}
+textarea{
+    width: 450px;
+     height: 75px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    background: none;
+    border: 2px solid white;
+    resize: none;
+}
+textarea::placeholder{
+    color: white;
+    padding-top: 10px;
+}
+.Award input{
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border: 1px solid white;
+}
+.Right .Award button img{
+    width: 12px;
+    display: flex;
+
+}
+.Right .Award button{
+    margin-bottom: 20px;
+}
+.submit button{
+    display: flex;
+    width: 420px;
+    font-size: 25px;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 30px;
+    margin-top: 25px;
+    font-weight: 100;
+}
+.box img{
+    display: flex;
+    width: 12px;
+}
