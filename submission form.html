@@ -30,52 +30,45 @@
 
         <form class="Right">
             <div class="input">
-                <input type="text" placeholder="Name"> <br>
-                <input type="text" placeholder="Email Address"> <br>
-                <input type="text" placeholder="Organization">
-            </div>
-            <h3>Which Award</h3>
-            <p>(Please tick and provide details for of the award would you like to bi nominated for)</p>
-            <div class="Award">
-                <label>
-                    <input type="checkbox"> Best livestream
-                </label>
-                <button><img src="plus.svg" alt="plus"></button>
-                <textarea type="text" placeholder="Discription & Results (max 150 words)"></textarea>
-            </div>
-            <div class="Award">
-                <label>
-                    <input type="checkbox"> Best Tour Compaign
-                </label>
-                <button><img src="plus.svg" alt="plus"></button>
-                <textarea type="text" placeholder="Discription & Results (max 150 words)"></textarea>
-            </div>
-            <div class="Award">
-                <label>
-                    <input type="checkbox"> Best Sponser Activation
-                </label>
-                <button><img src="plus.svg" alt="plus"></button>
-                <textarea type="text" placeholder="Discription & Results (max 150 words)"></textarea>
-            </div>
-            <div class="Award">
-                <label>
-                    <input type="checkbox"> Best Use of Techonology
-                </label>
-                <button><img src="plus.svg" alt="plus"></button>
-                <textarea type="text" placeholder="Discription & Results (max 150 words)"></textarea>
-            </div>
-            <div class="Award">
-                <label>
-                    <input type="checkbox"> Best Online Compaign
-                </label>
-                <button><img src="plus.svg" alt="plus"></button>
-                <textarea type="text" placeholder="Discription & Results (max 150 words)"></textarea>
+                <input type="file" id="imageInput">
+                <div id="fileErr"></div>
+                <input type="text" placeholder="Name" id="name"> <br>
+                <div id="nameErr"></div>
+                <input type="email" placeholder="Email Address" id="Email"> <br>
+                <div id="emailErr"></div>
+                <input type="text" placeholder="Organization" id="organization">
+                <div id="organizationErr"></div>
+                <input type="date" placeholder="Date of birth" id="birth">
+                <div id="birthErr"></div>
+                <input type="tel" placeholder="Enter your phone number" id="number">
+                <div id="numberErr"></div>
+                <input type="text" placeholder="Enter your CNIC number widthout dash" id="cnic">
+                <div id="cnicErr"></div>
+                <div class="gender">
+                    <input class="gender" checked type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input class="gender" type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div class="select">
+                    <select name="category" id="category">
+                        <option value="">Select Country</option>
+                        <option value="Pakistan" >Pakistan</option>
+                        <option value="India">India</option>
+                        <option value="Saudia Arabia">Saudia Arabia</option>
+                        <option value="Sirilanka">Sirilanka</option>
+                        <option value="Bangladash">Bangladash</option>
+                    </select>
+                    <div id="categoryErr"></div>
+                </div>
             </div>
             <div class="submit">
-            <button type="submit"><img src="tick.svg" alt="tick " width="50"> Submission Successful</button>
+                <button type="submit" onclick="validator(event)"><img src="tick.svg" alt="tick " width="50"> Submission
+                    Successful</button>
             </div>
         </form>
     </div>
+    <script src="submission form.js"></script>
 </body>
 
 </html>
